@@ -10,6 +10,7 @@ html {
 
 body {
   font-family: Karla, sans-serif;
+  margin: 0;
 }
 
 h1 {
@@ -23,7 +24,27 @@ h1 {
 }
 
 .footer {
-  border: 20px solid #c6ac8f;
+  border: 30px solid #c6ac8f;
   background-color: #c6ac8f;
   color: white;
+}
+
+.menu {
+  border: 10px solid #dec1a0;
+  background-color: #dec1a0;
+  color: white;
+}
+.menu__list {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu__link {
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
 }/*# sourceMappingURL=style.css.map */
