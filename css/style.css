@@ -1,1 +1,29 @@
-/*# sourceMappingURL=style.css.map */
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Karla, sans-serif;
+}
+
+h1 {
+  font-family: Kavivanar, cursive;
+}
+
+.header {
+  border: 20px solid #c6ac8f;
+  background-color: #c6ac8f;
+  color: white;
+}
+
+.footer {
+  border: 20px solid #c6ac8f;
+  background-color: #c6ac8f;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
