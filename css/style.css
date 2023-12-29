@@ -15,12 +15,24 @@ body {
 
 h1 {
   font-family: Kavivanar, cursive;
+  text-align: center;
 }
 
-.header {
+header {
   border: 20px solid #c6ac8f;
   background-color: #c6ac8f;
   color: white;
+}
+header .social_media img {
+  text-align: right;
+  width: 20px;
+}
+
+.main {
+  padding: 30px;
+}
+.main img {
+  background-size: cover;
 }
 
 .footer {
@@ -28,31 +40,75 @@ h1 {
   background-color: #c6ac8f;
   color: white;
 }
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer img {
+  width: 30px;
+  padding-right: 10px;
+}
+.footer .copyright {
+  text-align: end;
+}
 
 .menu {
   border: 10px solid #dec1a0;
   background-color: #dec1a0;
-  color: white;
+  justify-content: space-between;
 }
 .menu__list {
   list-style: none;
   text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 .menu__link {
+  flex: 0 1 auto;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 5px 10px;
   font-weight: bold;
   color: white;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .uvodni_foto {
   max-width: 100%;
 }
 
-header img, footer img {
-  width: 2%;
+.oteviraci_doba {
+  border: 20px solid #dec1a0;
+  background-color: #dec1a0;
+  max-width: 70%;
+}
+
+.rezervace {
+  background-color: white;
+  color: #dec1a0;
+  border: 5px solid #dec1a0;
+  border-radius: 20px;
+  line-height: 6;
+}
+
+.box {
+  border: 5px solid #dec1a0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+img {
+  width: 80px;
+  float: left;
+}
+
+.ikona {
+  width: 20px;
+}
+
+.odkaz_mapa {
+  width: 25%;
 }/*# sourceMappingURL=style.css.map */

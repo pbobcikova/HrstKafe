@@ -1,5 +1,6 @@
 $primary: #c6ac8f;
 $secondary: #dec1a0;
+$basic-text: black;
 
 html {
   box-sizing: border-box;
@@ -13,44 +14,106 @@ html {
 
 body {
   font-family: Karla, sans-serif;
-  margin:0;
+  margin: 0;
 }
 
 h1 {
   font-family: Kavivanar, cursive;
+  text-align: center;
 }
 
-.header {
+header {
   border: 20px solid $primary;
   background-color: $primary;
   color: white;
+
+  .social_media img {
+    text-align: right;
+    width: 20px;}
+}
+
+.main {
+  padding: 30px;
+  img {
+    background-size: cover;
+  }
 }
 
 .footer {
   border: 30px solid $primary;
   background-color: $primary;
   color: white;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  img {
+    width: 30px;
+    padding-right: 10px;
+  }
+  .copyright {
+    text-align: end;
+  }
 }
+
 .menu {
   border: 10px solid $secondary;
   background-color: $secondary;
-  color:white;
-
-&__list {
-  list-style: none;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
+
+  &__list {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__link {
+    flex: 0 1 auto;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+  }
 }
 
-&__link {
-  text-decoration: none;
-  padding: 15px 30px;
-  font-weight: bold;
-  color: white;
-  font-size: 25px;
-}}
+.uvodni_foto {
+  max-width: 100%;
+}
 
-.uvodni_foto{max-width: 100%;}
-header img, footer img {width: 2%}
+.oteviraci_doba {
+  border: 20px solid $secondary;
+  background-color: $secondary;
+  max-width: 70%;
+}
+
+.rezervace {
+  background-color: white;
+  color: $secondary;
+  border: 5px solid $secondary;
+  border-radius: 20px;
+  line-height: 6;
+}
+
+.box {
+  border: 5px solid $secondary;
+}
+
+a {
+  text-decoration: none;
+  color: $basic-text;
+  font-weight: bold;
+}
+img {
+  width: 80px;
+  float: left;
+}
+
+.ikona {
+  width: 20px;
+}
+.odkaz_mapa {
+  width: 25%;
+}
