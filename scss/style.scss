@@ -22,6 +22,8 @@ h1 {
   text-align: center;
 }
 
+h2 {text-align: center;
+color: $primary;}
 header {
   border: 20px solid $primary;
   background-color: $primary;
@@ -38,6 +40,7 @@ header {
   padding: 20px;
   margin: 5px auto;
   overflow: auto;
+  text-align:center;
   img {
     background-size: cover;
   }
@@ -74,7 +77,6 @@ header {
     display: flex;
     flex-direction: row;
     padding: 2px;
-  }
 
   &__link {
     flex: 0 1 auto;
@@ -91,12 +93,23 @@ header {
       color: $primary;
     }
   }
-}
+}}
 
 .uvodni_foto {
   width: 100%;
-  margin-bottom: 20px;
+  margin: 30px auto;
+  @media screen and (min-width: 1100px) {max-width:100%;}
+  
 }
+
+.border_text{border: 3px solid $primary;
+padding: 15px;}
+.text {font-size: 18px;color: $primary; font-weight: 600;
+  }
+.odkaz {&:hover,
+  &:focus {
+    background-color: $primary;
+    color: white;}}
 
 .oteviraci_doba {
   border: 10px solid $primary;
@@ -105,6 +118,7 @@ header {
   color: $contrast-text;
   font-size: 18px;
   text-align:center;
+  margin: 30px 0px;
 }
 
 .rezervace {
@@ -113,11 +127,14 @@ header {
   border: 5px solid $primary;
   border-radius: 20px;
   line-height: 6;
-  float: right;
+  
 }
 
 .box {
   border: 5px solid $primary;
+  padding:20px;
+  margin: 20px 0px;
+  text-align: center;
 }
 
 a {
@@ -131,12 +148,13 @@ img {
 }
 
 .ikona {
-  width: 20px;
+  width: 30px;
+  float:inherit;
+  padding-right: 10px;
+  
 }
 .odkaz_mapa {
   width: 25%;
 }
 
-p {
-  text-align: center;
-}
+.text_left{text-align: left}
