@@ -1,6 +1,6 @@
 $primary: #c6ac8f;
-$secondary: #dec1a0;
 $basic-text: black;
+$contrast-text: white;
 
 html {
   box-sizing: border-box;
@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: Karla, sans-serif;
+  font-family: Roboto, sans-serif;
   margin: 0;
 }
 
@@ -25,15 +25,19 @@ h1 {
 header {
   border: 20px solid $primary;
   background-color: $primary;
-  color: white;
+  color: $contrast-text;
 
   .social_media img {
-    text-align: right;
-    width: 20px;}
+    float: right;
+    width: 30px;
+    padding-right: 10px;
+  }
 }
 
 .main {
-  padding: 30px;
+  padding: 20px;
+  margin: 5px auto;
+  overflow: auto;
   img {
     background-size: cover;
   }
@@ -42,11 +46,12 @@ header {
 .footer {
   border: 30px solid $primary;
   background-color: $primary;
-  color: white;
+  color: $contrast-text;
+  padding: 10px;
 
   a {
     text-decoration: none;
-    color: white;
+    color: $contrast-text;
   }
   img {
     width: 30px;
@@ -58,15 +63,17 @@ header {
 }
 
 .menu {
-  border: 10px solid $secondary;
-  background-color: $secondary;
-  justify-content: space-between;
+  border: 2px solid $contrast-text;
+  background-color: $primary;
 
   &__list {
     list-style: none;
     text-align: center;
+    margin: 0;
+    justify-content: center;
     display: flex;
     flex-direction: row;
+    padding: 2px;
   }
 
   &__link {
@@ -74,31 +81,43 @@ header {
     text-decoration: none;
     padding: 5px 10px;
     font-weight: bold;
-    color: white;
+    color: $contrast-text;
     font-size: 15px;
+    line-height: 55px;
+
+    &:hover,
+    &:focus {
+      background-color: white;
+      color: $primary;
+    }
   }
 }
 
 .uvodni_foto {
-  max-width: 100%;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .oteviraci_doba {
-  border: 20px solid $secondary;
-  background-color: $secondary;
+  border: 10px solid $primary;
+  background-color: $primary;
   max-width: 70%;
+  color: $contrast-text;
+  font-size: 18px;
+  text-align:center;
 }
 
 .rezervace {
-  background-color: white;
-  color: $secondary;
-  border: 5px solid $secondary;
+  background-color: $contrast-text;
+  color: $primary;
+  border: 5px solid $primary;
   border-radius: 20px;
   line-height: 6;
+  float: right;
 }
 
 .box {
-  border: 5px solid $secondary;
+  border: 5px solid $primary;
 }
 
 a {
@@ -116,4 +135,8 @@ img {
 }
 .odkaz_mapa {
   width: 25%;
+}
+
+p {
+  text-align: center;
 }
