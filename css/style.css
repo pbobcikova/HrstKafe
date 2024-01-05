@@ -6,6 +6,7 @@ html {
 ::before,
 ::after {
   box-sizing: inherit;
+  padding-inline-start: 0px;
 }
 
 body {
@@ -70,11 +71,13 @@ header .social_media img {
 .menu {
   border: 2px solid white;
   background-color: #c6ac8f;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 .menu__list {
   list-style: none;
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-around;
   display: flex;
   flex-direction: row;
 }
