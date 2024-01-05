@@ -1,0 +1,84 @@
+@use "colors";
+
+header {
+    border: 20px solid colors.$primary;
+    background-color: colors.$primary;
+    color: colors.$contrast-text;
+  
+    .social_media img {
+      float: right;
+      width: 30px;
+      padding-right: 10px;
+    }
+  }
+  .menu {
+    border: 2px solid colors.$contrast-text;
+    background-color: colors.$primary;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  
+    &__list {
+      list-style: none;
+      text-align: center;
+      
+      justify-content: space-around;
+      display: flex;
+      flex-direction: row;
+      @media screen and (min-width: 1100px) {justify-content:space-around;}
+  
+      &__link {
+        flex: 0 1 auto;
+        text-decoration: none;
+        padding: 5px 10px;
+        font-weight: bold;
+        color: colors.$contrast-text;
+        font-size: 15px;
+        line-height: 75px;
+           
+  
+        &:hover,
+        &:focus {
+          background-color: colors.$contrast-text;
+          color: colors.$primary;
+        }
+      }
+      a {
+        color: colors.$contrast-text;
+      }
+    }
+    @media screen and (min-width: 1100px) {
+      margin: 0px 15%;
+      background-color: colors.$primary;
+    }
+  }
+  .main {
+    padding: 20px;
+    margin: 5px auto;
+    overflow: auto;
+    text-align: center;
+    img {
+      background-size: cover;
+    }
+    @media screen and (min-width: 1100px) {
+      margin: 20px 15%;
+    }
+  }
+  
+  .footer {
+    border: 30px solid colors.$primary;
+    background-color: colors.$primary;
+    color: colors.$contrast-text;
+    padding: 10px;
+  
+    a {
+      text-decoration: none;
+      color: colors.$contrast-text;
+    }
+    img {
+      width: 30px;
+      padding-right: 10px;
+    }
+    .copyright {
+      text-align: end;
+    }
+  }
