@@ -1,4 +1,5 @@
 $primary: #c6ac8f;
+$secondary: #b99771;
 $basic-text: black;
 $contrast-text: white;
 
@@ -22,8 +23,10 @@ h1 {
   text-align: center;
 }
 
-h2 {text-align: center;
-color: $primary;}
+h2 {
+  text-align: center;
+  color: $secondary;
+}
 header {
   border: 20px solid $primary;
   background-color: $primary;
@@ -40,9 +43,12 @@ header {
   padding: 20px;
   margin: 5px auto;
   overflow: auto;
-  text-align:center;
+  text-align: center;
   img {
     background-size: cover;
+  }
+  @media screen and (min-width: 1100px) {
+    margin: 20px 15%;
   }
 }
 
@@ -73,43 +79,62 @@ header {
     list-style: none;
     text-align: center;
     margin: 0;
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
-    padding: 2px;
 
-  &__link {
-    flex: 0 1 auto;
-    text-decoration: none;
-    padding: 5px 10px;
-    font-weight: bold;
-    color: $contrast-text;
-    font-size: 15px;
-    line-height: 55px;
+    &__link {
+      flex: 0 1 auto;
+      text-decoration: none;
+      padding: 5px 10px;
+      font-weight: bold;
+      color: $contrast-text;
+      font-size: 15px;
+      line-height: 75px;
 
-    &:hover,
-    &:focus {
-      background-color: white;
-      color: $primary;
+      &:hover,
+      &:focus {
+        background-color: $contrast-text;
+        color: $primary;
+      }
+    }
+    a {
+      color: $contrast-text;
     }
   }
-}}
+  @media screen and (min-width: 1100px) {
+    margin: 0px 15%;
+    background-color: $primary;
+  }
+}
 
 .uvodni_foto {
   width: 100%;
   margin: 30px auto;
-  @media screen and (min-width: 1100px) {max-width:100%;}
-  
+  @media screen and (min-width: 1100px) {
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
 }
 
-.border_text{border: 3px solid $primary;
-padding: 15px;}
-.text {font-size: 18px;color: $primary; font-weight: 600;
-  }
-.odkaz {&:hover,
+.border_text {
+  border: 3px solid $primary;
+  padding: 15px;
+}
+.text {
+  font-size: 18px;
+  color: $secondary;
+  font-weight: 600;
+}
+.odkaz {
+  text-decoration: underline;
+  &:hover,
   &:focus {
     background-color: $primary;
-    color: white;}}
+    color: white;
+  }
+}
 
 .oteviraci_doba {
   border: 10px solid $primary;
@@ -117,7 +142,7 @@ padding: 15px;}
   max-width: 70%;
   color: $contrast-text;
   font-size: 18px;
-  text-align:center;
+  text-align: center;
   margin: 30px 0px;
 }
 
@@ -127,12 +152,11 @@ padding: 15px;}
   border: 5px solid $primary;
   border-radius: 20px;
   line-height: 6;
-  
 }
 
 .box {
   border: 5px solid $primary;
-  padding:20px;
+  padding: 20px;
   margin: 20px 0px;
   text-align: center;
 }
@@ -149,12 +173,22 @@ img {
 
 .ikona {
   width: 30px;
-  float:inherit;
+  float: inherit;
   padding-right: 10px;
-  
 }
 .odkaz_mapa {
   width: 25%;
+  padding: 0;
+  @media screen and (min-width: 1100px) {
+    width: 100%;
+  }
 }
 
-.text_left{text-align: left}
+.text_left {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.footer__kontakt {
+  margin-top: 40px;
+}

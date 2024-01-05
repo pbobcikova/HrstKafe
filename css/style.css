@@ -20,7 +20,7 @@ h1 {
 
 h2 {
   text-align: center;
-  color: #c6ac8f;
+  color: #b99771;
 }
 
 header {
@@ -42,6 +42,11 @@ header .social_media img {
 }
 .main img {
   background-size: cover;
+}
+@media screen and (min-width: 1100px) {
+  .main {
+    margin: 20px 15%;
+  }
 }
 
 .footer {
@@ -70,10 +75,9 @@ header .social_media img {
   list-style: none;
   text-align: center;
   margin: 0;
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
   flex-direction: row;
-  padding: 2px;
 }
 .menu__list__link {
   flex: 0 1 auto;
@@ -82,11 +86,20 @@ header .social_media img {
   font-weight: bold;
   color: white;
   font-size: 15px;
-  line-height: 55px;
+  line-height: 75px;
 }
 .menu__list__link:hover, .menu__list__link:focus {
   background-color: white;
   color: #c6ac8f;
+}
+.menu__list a {
+  color: white;
+}
+@media screen and (min-width: 1100px) {
+  .menu {
+    margin: 0px 15%;
+    background-color: #c6ac8f;
+  }
 }
 
 .uvodni_foto {
@@ -96,6 +109,9 @@ header .social_media img {
 @media screen and (min-width: 1100px) {
   .uvodni_foto {
     max-width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -106,10 +122,13 @@ header .social_media img {
 
 .text {
   font-size: 18px;
-  color: #c6ac8f;
+  color: #b99771;
   font-weight: 600;
 }
 
+.odkaz {
+  text-decoration: underline;
+}
 .odkaz:hover, .odkaz:focus {
   background-color: #c6ac8f;
   color: white;
@@ -159,8 +178,19 @@ img {
 
 .odkaz_mapa {
   width: 25%;
+  padding: 0;
+}
+@media screen and (min-width: 1100px) {
+  .odkaz_mapa {
+    width: 100%;
+  }
 }
 
 .text_left {
   text-align: left;
+  margin-top: 40px;
+}
+
+.footer__kontakt {
+  margin-top: 40px;
 }/*# sourceMappingURL=style.css.map */
