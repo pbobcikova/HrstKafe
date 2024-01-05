@@ -1,7 +1,4 @@
-$primary: #c6ac8f;
-$secondary: #b99771;
-$basic-text: black;
-$contrast-text: white;
+@use "colors";
 
 html {
   box-sizing: border-box;
@@ -25,11 +22,11 @@ h1 {
 
 h2 {
   text-align: center;
-  color: $secondary;
+  color: colors.$secondary;
 }
 header {
-  border: 20px solid $primary;
-  background-color: $primary;
+  border: 20px solid colors.$primary;
+  background-color: colors.$primary;
   color: $contrast-text;
 
   .social_media img {
@@ -53,9 +50,9 @@ header {
 }
 
 .footer {
-  border: 30px solid $primary;
-  background-color: $primary;
-  color: $contrast-text;
+  border: 30px solid colors.$primary;
+  background-color: colors.$primary;
+  color: colors.$contrast-text;
   padding: 10px;
 
   a {
@@ -72,39 +69,41 @@ header {
 }
 
 .menu {
-  border: 2px solid $contrast-text;
-  background-color: $primary;
+  border: 2px solid colors.$contrast-text;
+  background-color: colors.$primary;
 
   &__list {
     list-style: none;
     text-align: center;
-    margin: 0;
+    
     justify-content: space-between;
     display: flex;
     flex-direction: row;
+    @media screen and (min-width: 1100px) {justify-content:space-around;}
 
     &__link {
       flex: 0 1 auto;
       text-decoration: none;
       padding: 5px 10px;
       font-weight: bold;
-      color: $contrast-text;
+      color: colors.$contrast-text;
       font-size: 15px;
       line-height: 75px;
+         
 
       &:hover,
       &:focus {
-        background-color: $contrast-text;
-        color: $primary;
+        background-color: colors.$contrast-text;
+        color: colors.$primary;
       }
     }
     a {
-      color: $contrast-text;
+      color: colors.$contrast-text;
     }
   }
   @media screen and (min-width: 1100px) {
     margin: 0px 15%;
-    background-color: $primary;
+    background-color: colors.$primary;
   }
 }
 
@@ -119,43 +118,43 @@ header {
 }
 
 .border_text {
-  border: 3px solid $primary;
+  border: 3px solid colors.$primary;
   padding: 15px;
 }
 .text {
   font-size: 18px;
-  color: $secondary;
+  color: colors.$secondary;
   font-weight: 600;
 }
 .odkaz {
   text-decoration: underline;
   &:hover,
   &:focus {
-    background-color: $primary;
+    background-color: colors.$primary;
     color: white;
   }
 }
 
 .oteviraci_doba {
-  border: 10px solid $primary;
-  background-color: $primary;
+  border: 10px solid colors.$primary;
+  background-color: colors.$primary;
   max-width: 70%;
-  color: $contrast-text;
+  color: colors.$contrast-text;
   font-size: 18px;
   text-align: center;
   margin: 30px 0px;
 }
 
 .rezervace {
-  background-color: $contrast-text;
-  color: $primary;
-  border: 5px solid $primary;
+  background-color: colors.$contrast-text;
+  color: colors.$primary;
+  border: 5px solid colors.$primary;
   border-radius: 20px;
   line-height: 6;
 }
 
 .box {
-  border: 5px solid $primary;
+  border: 5px solid colors.$primary;
   padding: 20px;
   margin: 20px 0px;
   text-align: center;
